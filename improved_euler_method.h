@@ -7,7 +7,6 @@ private:
     double local_formula(double x, double y);
 
 public:
-    void calculate_values();
     Improved_Euler_Method();
 };
 

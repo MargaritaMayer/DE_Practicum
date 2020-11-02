@@ -20,10 +20,3 @@ double Grid::get_X() {
 int Grid::get_N() {
     return this->N;
 }
-
-void Grid::set_data (double x0, double y0, double X, double N){
-    this->x0 = x0;
-    this->y0 = y0;
-    this->X = X;
-    this->N = N;
-}

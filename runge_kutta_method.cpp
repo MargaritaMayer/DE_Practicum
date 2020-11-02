@@ -9,13 +9,6 @@ double Runge_Kutta_Method::local_formula(double x, double y) {
     return y + h / 6 * (k1 + 2 * k2 + 2 * k3 + k4);
 }
 
-void Runge_Kutta_Method::calculate_values() {
-    y[0] = y0;
-    for (int i = 1; i < N; i++) {
-        y[i] = local_formula(x0 + (X - x0) / N * i, y[i - 1]);
-    }
-}
-
 Runge_Kutta_Method::Runge_Kutta_Method(){
-    Grid();
+    set_data();
 }

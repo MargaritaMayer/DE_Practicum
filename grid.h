@@ -15,7 +15,7 @@ public:
     double get_X();
     int get_N();
 
-    void set_data (double x0, double y0, double X, double N);
+    virtual void set_data(double x0 = 1, double y0 = 1, double X = 6, int N = 600) = 0;
 };
 
 #endif // INIT_H
